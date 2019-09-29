@@ -13,7 +13,8 @@ def get_coin_type(coin_type):
 def getChange(cents):
     drawer = [25, 10, 5, 1]
     filtered_drawer = set()
-    remainder = coin_type = 0
+    remainder = 0
+    coin_type = get_coin_type(25)
     min_amount = 25
     for i in drawer:
         if i <= cents:
